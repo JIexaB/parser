@@ -1,6 +1,7 @@
 
 import java.io.*;
 import java.nio.file.Path;
+import java.util.Iterator;
 
 
 public class Read{
@@ -11,13 +12,13 @@ public class Read{
 	private static StringBuilder sb;
 	
 
-	public static String readElement (Path workspace) throws FileNotFoundException { //+fileErrorException
-				
+	public static String readElement (Path workspace) throws FileNotFoundException {	
+	
 		//Этот спец. объект для построения строки    
 		sb = new StringBuilder();
         	
         	//Объект для чтения файла в буфер
-        	try (BufferedReader in = new BufferedReader(new FileReader(workspace.toFile()));) 
+        	try (BufferedReader in = new BufferedReader(new FileReader(workspace.toFile()));)
         	{
         		        		
         		//В цикле построчно считываем файл и строки помещаем в динамический стринг
