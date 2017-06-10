@@ -14,10 +14,7 @@ public class Dictionary {
 	//если нигде нет, выводится сообщение об ощибке - нет слова под запрашиваемым индексом
 	//здесь должно быть понимание того, какие слова уже были выданы, дабы не повторяться 
 	
-	/*Dictionary(){
-		
-	}
-	*/
+	
 	Dictionary(){
 		arraysDictionary = new ArrayList<List<String>>();		
 		index = 0;

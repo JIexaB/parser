@@ -45,7 +45,7 @@ public class LoadDictionary {
 	}
 	
 	
-	// будет так public static String loadDictionary(String workspace)  throws FileNotFoundException {
+	
 	public static void loadDictionary(String workspace)  throws FileNotFoundException {	
 		path = Paths.get(workspace);
 		if(exists(path)){		
@@ -53,7 +53,7 @@ public class LoadDictionary {
 			fileSequence = LoadDictionary.path.iterator();
 		
 	    		while(fileSequence.hasNext()){
-	    	//массив строк словаря
+	    	//массив словарей
 	    			System.out.println(fileSequence.toString());
 	    			Dictionary.setDictionary(Read.readElement(fileSequence.next()));
 	        
