@@ -9,6 +9,7 @@ public class Dictionary {
 	private static int index, indexOfDictionary;
 	private static String line;
 	private static String sizeOfDict;
+	//private static Iterator<Integer> dictionaryRandomAccess; 
 	//грузятся все словари и выдается по слову из случайного словаря по индексу, 
 	//если в словаре нет данного индекса - ищется словарь где есть слово под запрашеваемым индексом,
 	//если нигде нет, выводится сообщение об ощибке - нет слова под запрашиваемым индексом
@@ -41,6 +42,8 @@ public class Dictionary {
 	//на вход только индекс линии, индекс словаря местный
 	//public static String getLineOfDictionary(int indexOfDictionary, int indexOfLine){
 	public static String getLineOfDictionary(int indexOfLine){
+		//randomaccess---??????
+		//dictionaryRandomAccess = arraysDictionary.iterator();
 		line = arraysDictionary.get(indexOfDictionary).get(indexOfLine);
 		return line;
 	}
