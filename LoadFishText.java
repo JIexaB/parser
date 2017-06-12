@@ -1,7 +1,6 @@
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 
@@ -42,20 +41,6 @@ public class LoadFishText {
 	
 	
 	// будет так public static String loadDictionary(String workspace)  throws FileNotFoundException {
-	public static void loadFishText(String workspace)  throws FileNotFoundException {	
-		path = Paths.get(workspace);
-		if(exists(path)){		
-		//Это итератор, используется для перебора файлов в папке
-			fileSequence = path.iterator();
-		
-	    		while(fileSequence.hasNext()){
-	    	//массив строк словаря
-	    			System.out.println(fileSequence.toString());
-	    			Dictionary.setDictionary(Read.readElement(fileSequence.next()));
-	        
-	    			//System.out.println(fileSequence.toString());
-	    		}
-		}
-	}
+	
 
 }
